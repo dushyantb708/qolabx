@@ -1,0 +1,16 @@
+com\qolabx\controller\RecruiterController.class
+com\qolabx\beans\Company.class
+com\qolabx\exception\QolabxException.class
+com\qolabx\constants\JobApplicationStatus.class
+com\qolabx\dao\JobDao.class
+com\qolabx\beans\Job.class
+com\qolabx\constants\Role.class
+com\qolabx\beans\User.class
+com\qolabx\constants\QolabxConstants.class
+com\qolabx\beans\BaseResponse.class
+com\qolabx\initializer\ApplicationInitializer.class
+com\qolabx\beans\JobApplication.class
+com\qolabx\config\ApplicationConfiguration.class
+com\qolabx\daoImpl\JobDaoImpl.class
+com\qolabx\serviceImpl\JobServiceImpl.class
+com\qolabx\service\JobService.class
