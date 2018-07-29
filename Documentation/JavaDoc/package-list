@@ -1,0 +1,11 @@
+com.qolabx.beans
+com.qolabx.config
+com.qolabx.constants
+com.qolabx.controller
+com.qolabx.dao
+com.qolabx.daoImpl
+com.qolabx.exception
+com.qolabx.initializer
+com.qolabx.service
+com.qolabx.serviceImpl
+com.qolabx.util
