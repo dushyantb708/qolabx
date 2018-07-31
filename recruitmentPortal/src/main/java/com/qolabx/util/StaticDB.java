@@ -8,6 +8,7 @@ import com.qolabx.beans.Company;
 import com.qolabx.beans.Job;
 import com.qolabx.beans.JobApplication;
 import com.qolabx.beans.User;
+import com.qolabx.constants.JobApplicationStatus;
 import com.qolabx.constants.Role;
 
 public class StaticDB {
@@ -38,6 +39,16 @@ public class StaticDB {
 		user2.setLastName("Singhal");
 		user2.setRole(Role.RECRUITER);
 		users.add(user2);
+		
+		//Third User
+		User user3 = new User();
+		user3.setUserId(3L);
+		user3.setEmail("rahul@mail.com");
+		user3.setUserName("rahul");
+		user3.setFirstName("Rahul");
+		user3.setLastName("Parwal");
+		user3.setRole(Role.JOB_SEEKER);
+		users.add(user3);
 		
 		//Companies
 		//First Company
@@ -84,8 +95,17 @@ public class StaticDB {
 		job2.setCompany(company2);
 		job2.setPostedOn(new Date(118, 8, 26));
 		job2.setExpiryOn(new Date(118, 9, 30));
-		job2.setRecruiter(user2);
+		job2.setRecruiter(user3);
 		availableJobs.add(job2);
+		
+		//Job Application
+		JobApplication application = new JobApplication();
+		application.setJobApplicant(user3);
+		application.setJob(job1);
+		application.setAppliedOn(new Date());
+		application.setJobApplicationId(1l);
+		application.setStatus(JobApplicationStatus.PENDING);
+		jobApplications.add(application);
 	}
 	
 	
